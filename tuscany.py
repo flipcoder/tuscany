@@ -26,8 +26,8 @@ def use(**kwargs):
     # TODO: get item to use
     clear()
     item = input('Which item? ')
-    input()
-    return (back(kwargs), {use: item})
+    # input()
+    return (back(kwargs), {'use': item})
 
 def hospital(**kwargs):
     out("Next thing you know, you wake up in a hospital. You see a man without a face.")
