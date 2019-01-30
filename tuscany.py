@@ -54,10 +54,10 @@ def hills(**kwargs):
     out("Down narrow streets and dusty roads.")
     out("At last we came upon...\n")
     return choice([
-        ('c','castle',None),
+        ('c','a castle',None),
         ('m','muh bruthuh',None),
         ('r','ravesnkill',None),
-        ('b','an estate',estate),
+        ('e','an estate',estate),
     ])
 
 def dark(**kwargs):
@@ -89,7 +89,7 @@ def run(**kwargs):
 def vocals(**kwargs):
     if MUSIC: music.play(0, (60 * 4 + 39))
     
-    out("Several years ago, in a foreign town, far away from home, you met the "+"'Count_of_Tuscany.")
+    out("Several years ago, in a foreign town, far away from home, you met the Count_of_Tuscany.")
     out("A young eccentric man bred from royal blood.\n")
     out("The Count says, \"Get into my car, let's go for a drive. Along the way I'll be your guide, just step inside!\"\n")
     out("Would you like to go for a ride across the open country side?\n")
@@ -100,8 +100,7 @@ def vocals(**kwargs):
     ])
 
 def welcome(**kwargs):
-    if MUSIC:
-        music.play(0,0)
+    if MUSIC: music.play(0,0)
     out("Welcome to Tuscany.exe")
     out("")
     out('This game will play and sync to the '+FG.BLUE+'8-bit version'+FG.RESET+
